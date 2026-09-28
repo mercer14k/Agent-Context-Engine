@@ -1,0 +1,7 @@
+{
+  "v": 1,
+  "registry": "d0260f7bd1da6489",
+  "op": "run_tests",
+  "suite": "auth",
+  "stop_after": 1
+}

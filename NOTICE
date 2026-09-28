@@ -1,0 +1,9 @@
+Agent Context Engine — unpublished developer preview
+
+Original implementation prepared for the project owner.
+Proposed license for the original public core: Apache License, Version 2.0.
+Owner/legal review is required before publication.
+
+Optional dependencies retain their own licenses and notices. See
+THIRD_PARTY_NOTICES.md and third_party_licenses/.
+No Headroom or RTK implementation or model weights are included.

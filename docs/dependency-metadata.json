@@ -1,0 +1,646 @@
+[
+  {
+    "name": "ast_serialize",
+    "version": "0.11.2",
+    "license": "MIT",
+    "license_files": [
+      "third_party_licenses/ast_serialize/licenses/LICENSE",
+      "third_party_licenses/ast_serialize/licenses/crates/LICENSE"
+    ],
+    "requires_python": ">=3.7",
+    "requires": [],
+    "project_urls": [
+      "Homepage, https://github.com/mypyc/ast_serialize",
+      "Issues, https://github.com/mypyc/ast_serialize/issues"
+    ]
+  },
+  {
+    "name": "certifi",
+    "version": "2026.7.22",
+    "license": "MPL-2.0",
+    "license_files": [
+      "third_party_licenses/certifi/licenses/LICENSE"
+    ],
+    "requires_python": ">=3.7",
+    "requires": [],
+    "project_urls": [
+      "Source, https://github.com/certifi/python-certifi"
+    ]
+  },
+  {
+    "name": "charset-normalizer",
+    "version": "3.5.1",
+    "license": "MIT",
+    "license_files": [
+      "third_party_licenses/charset-normalizer/licenses/LICENSE"
+    ],
+    "requires_python": ">=3.7",
+    "requires": [],
+    "project_urls": [
+      "Changelog, https://github.com/jawah/charset_normalizer/blob/master/CHANGELOG.md",
+      "Documentation, https://charset-normalizer.readthedocs.io/",
+      "Code, https://github.com/jawah/charset_normalizer",
+      "Issue tracker, https://github.com/jawah/charset_normalizer/issues"
+    ]
+  },
+  {
+    "name": "greenlet",
+    "version": "3.5.6",
+    "license": "MIT AND PSF-2.0",
+    "license_files": [
+      "third_party_licenses/greenlet/licenses/LICENSE",
+      "third_party_licenses/greenlet/licenses/LICENSE.PSF"
+    ],
+    "requires_python": ">=3.10",
+    "requires": [
+      "Sphinx; extra == \"docs\"",
+      "furo; extra == \"docs\"",
+      "objgraph; extra == \"test\"",
+      "psutil; extra == \"test\"",
+      "setuptools; extra == \"test\""
+    ],
+    "project_urls": [
+      "Homepage, https://greenlet.readthedocs.io",
+      "Documentation, https://greenlet.readthedocs.io",
+      "Repository, https://github.com/python-greenlet/greenlet",
+      "Issues, https://github.com/python-greenlet/greenlet/issues",
+      "Changelog, https://greenlet.readthedocs.io/en/latest/changes.html"
+    ]
+  },
+  {
+    "name": "hypothesis",
+    "version": "6.168.0",
+    "license": "MPL-2.0",
+    "license_files": [
+      "third_party_licenses/hypothesis/licenses/LICENSE.txt"
+    ],
+    "requires_python": ">=3.10",
+    "requires": [
+      "exceptiongroup>=1.0.0 ; python_full_version < '3.11'",
+      "sortedcontainers>=2.1.0,<3.0.0",
+      "black>=20.8b0 ; extra == 'all'",
+      "click>=7.0 ; extra == 'all'",
+      "crosshair-tool>=0.0.110 ; extra == 'all'",
+      "django>=5.2 ; extra == 'all'",
+      "dpcontracts>=0.4 ; extra == 'all'",
+      "hypothesis-crosshair>=0.0.30 ; extra == 'all'",
+      "lark>=0.10.1 ; extra == 'all'",
+      "libcst>=0.3.16 ; extra == 'all'",
+      "numpy>=1.21.6 ; extra == 'all'",
+      "pandas>=1.1 ; extra == 'all'",
+      "pytest>=4.6 ; extra == 'all'",
+      "python-dateutil>=1.4 ; extra == 'all'",
+      "pytz>=2014.1 ; extra == 'all'",
+      "redis>=3.0.0 ; extra == 'all'",
+      "rich>=9.0.0 ; extra == 'all'",
+      "tzdata>=2026.3 ; (sys_platform == 'emscripten' and extra == 'all') or (sys_platform == 'win32' and extra == 'all')",
+      "watchdog>=4.0.0 ; extra == 'all'",
+      "click>=7.0 ; extra == 'cli'",
+      "black>=20.8b0 ; extra == 'cli'",
+      "rich>=9.0.0 ; extra == 'cli'",
+      "libcst>=0.3.16 ; extra == 'codemods'",
+      "hypothesis-crosshair>=0.0.30 ; extra == 'crosshair'",
+      "crosshair-tool>=0.0.110 ; extra == 'crosshair'",
+      "python-dateutil>=1.4 ; extra == 'dateutil'",
+      "django>=5.2 ; extra == 'django'",
+      "dpcontracts>=0.4 ; extra == 'dpcontracts'",
+      "black>=20.8b0 ; extra == 'ghostwriter'",
+      "lark>=0.10.1 ; extra == 'lark'",
+      "numpy>=1.21.6 ; extra == 'numpy'",
+      "pandas>=1.1 ; extra == 'pandas'",
+      "pytest>=4.6 ; extra == 'pytest'",
+      "pytz>=2014.1 ; extra == 'pytz'",
+      "redis>=3.0.0 ; extra == 'redis'",
+      "watchdog>=4.0.0 ; extra == 'watchdog'",
+      "tzdata>=2026.3 ; (sys_platform == 'emscripten' and extra == 'zoneinfo') or (sys_platform == 'win32' and extra == 'zoneinfo')"
+    ],
+    "project_urls": [
+      "changelog, https://hypothesis.readthedocs.io/en/latest/changelog.html",
+      "documentation, https://hypothesis.readthedocs.io",
+      "homepage, https://hypothesis.works",
+      "issues, https://github.com/HypothesisWorks/hypothesis/issues",
+      "source, https://github.com/HypothesisWorks/hypothesis"
+    ]
+  },
+  {
+    "name": "idna",
+    "version": "3.19",
+    "license": "BSD-3-Clause",
+    "license_files": [
+      "third_party_licenses/idna/licenses/LICENSE.md"
+    ],
+    "requires_python": ">=3.9",
+    "requires": [
+      "ruff >= 0.16.0 ; extra == \"all\"",
+      "mypy >= 1.11.2 ; extra == \"all\"",
+      "ty >= 0.0.37 ; extra == \"all\"",
+      "pytest >= 8.3.2 ; extra == \"all\"",
+      "hypothesis >= 6.141.1 ; extra == \"all\"",
+      "coverage >= 7.10.0 ; extra == \"all\""
+    ],
+    "project_urls": [
+      "Changelog, https://github.com/kjd/idna/blob/master/HISTORY.md",
+      "Issue tracker, https://github.com/kjd/idna/issues",
+      "Source, https://github.com/kjd/idna"
+    ]
+  },
+  {
+    "name": "iniconfig",
+    "version": "2.3.0",
+    "license": "MIT",
+    "license_files": [
+      "third_party_licenses/iniconfig/licenses/LICENSE"
+    ],
+    "requires_python": ">=3.10",
+    "requires": [],
+    "project_urls": [
+      "Homepage, https://github.com/pytest-dev/iniconfig"
+    ]
+  },
+  {
+    "name": "librt",
+    "version": "0.15.0",
+    "license": "MIT",
+    "license_files": [
+      "third_party_licenses/librt/licenses/LICENSE"
+    ],
+    "requires_python": ">=3.9",
+    "requires": [],
+    "project_urls": [
+      "Homepage, https://github.com/mypyc/librt",
+      "Issues, https://github.com/mypyc/mypyc/issues"
+    ]
+  },
+  {
+    "name": "mypy",
+    "version": "2.3.1",
+    "license": "MIT",
+    "license_files": [
+      "third_party_licenses/mypy/licenses/LICENSE",
+      "third_party_licenses/mypy/licenses/mypy/typeshed/LICENSE"
+    ],
+    "requires_python": ">=3.10",
+    "requires": [
+      "typing_extensions>=4.6.0; python_version < \"3.15\"",
+      "typing_extensions>=4.14.0; python_version >= \"3.15\"",
+      "mypy_extensions>=1.0.0",
+      "pathspec>=1.0.0",
+      "tomli>=1.1.0; python_version < \"3.11\"",
+      "librt>=0.13.0; platform_python_implementation != \"PyPy\"",
+      "ast-serialize<1.0.0,>=0.6.0",
+      "psutil>=4.0; extra == \"dmypy\"",
+      "setuptools>=50; extra == \"mypyc\"",
+      "lxml; extra == \"reports\"",
+      "pip; extra == \"install-types\"",
+      "orjson; extra == \"faster-cache\""
+    ],
+    "project_urls": [
+      "Homepage, https://www.mypy-lang.org/",
+      "Documentation, https://mypy.readthedocs.io/en/stable/index.html",
+      "Repository, https://github.com/python/mypy",
+      "Changelog, https://github.com/python/mypy/blob/master/CHANGELOG.md",
+      "Issues, https://github.com/python/mypy/issues"
+    ]
+  },
+  {
+    "name": "mypy_extensions",
+    "version": "1.1.0",
+    "license": "MIT",
+    "license_files": [
+      "third_party_licenses/mypy_extensions/licenses/LICENSE"
+    ],
+    "requires_python": ">=3.8",
+    "requires": [],
+    "project_urls": [
+      "Homepage, https://github.com/python/mypy_extensions"
+    ]
+  },
+  {
+    "name": "packaging",
+    "version": "26.3",
+    "license": "Apache-2.0 OR BSD-2-Clause",
+    "license_files": [
+      "third_party_licenses/packaging/licenses/LICENSE",
+      "third_party_licenses/packaging/licenses/LICENSE.APACHE",
+      "third_party_licenses/packaging/licenses/LICENSE.BSD"
+    ],
+    "requires_python": ">=3.9",
+    "requires": [],
+    "project_urls": [
+      "Documentation, https://packaging.pypa.io/",
+      "Source, https://github.com/pypa/packaging"
+    ]
+  },
+  {
+    "name": "pathspec",
+    "version": "1.1.1",
+    "license": "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+    "license_files": [
+      "third_party_licenses/pathspec/licenses/LICENSE"
+    ],
+    "requires_python": ">=3.9",
+    "requires": [
+      "hyperscan >=0.7 ; extra == \"hyperscan\"",
+      "typing-extensions >=4 ; extra == \"optional\"",
+      "google-re2 >=1.1 ; extra == \"re2\""
+    ],
+    "project_urls": [
+      "Change Log, https://python-path-specification.readthedocs.io/en/latest/changes.html",
+      "Documentation, https://python-path-specification.readthedocs.io/en/latest/index.html",
+      "Issue Tracker, https://github.com/cpburnz/python-pathspec/issues",
+      "Source Code, https://github.com/cpburnz/python-pathspec"
+    ]
+  },
+  {
+    "name": "pip",
+    "version": "26.2.1",
+    "license": "MIT",
+    "license_files": [
+      "third_party_licenses/pip/licenses/AUTHORS.txt",
+      "third_party_licenses/pip/licenses/LICENSE.txt",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/cachecontrol/LICENSE.txt",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/certifi/LICENSE",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/distlib/LICENSE.txt",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/distro/LICENSE",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/idna/LICENSE.md",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/msgpack/COPYING",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/packaging/LICENSE",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/packaging/LICENSE.APACHE",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/packaging/LICENSE.BSD",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/pkg_resources/LICENSE",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/platformdirs/LICENSE",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/pygments/LICENSE",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/pyproject_hooks/LICENSE",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/requests/LICENSE",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/resolvelib/LICENSE",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/rich/LICENSE",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/tomli/LICENSE",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/tomli_w/LICENSE",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/truststore/LICENSE",
+      "third_party_licenses/pip/licenses/src/pip/_vendor/urllib3/LICENSE.txt"
+    ],
+    "requires_python": ">=3.10",
+    "requires": [],
+    "project_urls": [
+      "Changelog, https://pip.pypa.io/en/stable/news/",
+      "Documentation, https://pip.pypa.io",
+      "Homepage, https://pip.pypa.io/",
+      "Source, https://github.com/pypa/pip"
+    ]
+  },
+  {
+    "name": "playwright",
+    "version": "1.62.0",
+    "license": "Apache-2.0",
+    "license_files": [
+      "third_party_licenses/playwright/licenses/LICENSE"
+    ],
+    "requires_python": ">=3.10",
+    "requires": [
+      "pyee<14,>=13",
+      "greenlet<4.0.0,>=3.1.1"
+    ],
+    "project_urls": [
+      "homepage, https://github.com/Microsoft/playwright-python",
+      "Release notes, https://github.com/microsoft/playwright-python/releases"
+    ]
+  },
+  {
+    "name": "pluggy",
+    "version": "1.6.0",
+    "license": "MIT",
+    "license_files": [
+      "third_party_licenses/pluggy/licenses/LICENSE"
+    ],
+    "requires_python": ">=3.9",
+    "requires": [
+      "pre-commit; extra == \"dev\"",
+      "tox; extra == \"dev\"",
+      "pytest; extra == \"testing\"",
+      "pytest-benchmark; extra == \"testing\"",
+      "coverage; extra == \"testing\""
+    ],
+    "project_urls": null
+  },
+  {
+    "name": "pyee",
+    "version": "13.0.1",
+    "license": "MIT",
+    "license_files": [
+      "third_party_licenses/pyee/licenses/LICENSE"
+    ],
+    "requires_python": ">=3.8",
+    "requires": [
+      "typing-extensions",
+      "build; extra == \"dev\"",
+      "flake8; extra == \"dev\"",
+      "flake8-black; extra == \"dev\"",
+      "pytest; extra == \"dev\"",
+      "pytest-asyncio; python_version >= \"3.4\" and extra == \"dev\"",
+      "pytest-trio; python_version >= \"3.7\" and extra == \"dev\"",
+      "black; extra == \"dev\"",
+      "isort; extra == \"dev\"",
+      "jupyter-console; extra == \"dev\"",
+      "mkdocs; extra == \"dev\"",
+      "mkdocs-include-markdown-plugin; extra == \"dev\"",
+      "mkdocstrings[python]; extra == \"dev\"",
+      "mypy; extra == \"dev\"",
+      "sphinx; extra == \"dev\"",
+      "toml; extra == \"dev\"",
+      "tox; extra == \"dev\"",
+      "trio; extra == \"dev\"",
+      "trio; python_version > \"3.6\" and extra == \"dev\"",
+      "trio-typing; python_version > \"3.6\" and extra == \"dev\"",
+      "twine; extra == \"dev\"",
+      "twisted; extra == \"dev\"",
+      "validate-pyproject[all]; extra == \"dev\""
+    ],
+    "project_urls": [
+      "Repository, https://github.com/jfhbrook/pyee",
+      "Documentation, https://pyee.readthedocs.io"
+    ]
+  },
+  {
+    "name": "Pygments",
+    "version": "2.21.0",
+    "license": "BSD-2-Clause",
+    "license_files": [
+      "third_party_licenses/Pygments/licenses/AUTHORS",
+      "third_party_licenses/Pygments/licenses/LICENSE"
+    ],
+    "requires_python": ">=3.9",
+    "requires": [
+      "colorama>=0.4.6; extra == 'windows-terminal'"
+    ],
+    "project_urls": [
+      "Homepage, https://pygments.org",
+      "Documentation, https://pygments.org/docs",
+      "Source, https://github.com/pygments/pygments",
+      "Bug Tracker, https://github.com/pygments/pygments/issues",
+      "Changelog, https://github.com/pygments/pygments/blob/master/CHANGES"
+    ]
+  },
+  {
+    "name": "pytest",
+    "version": "9.1.1",
+    "license": "MIT",
+    "license_files": [
+      "third_party_licenses/pytest/licenses/LICENSE"
+    ],
+    "requires_python": ">=3.10",
+    "requires": [
+      "colorama>=0.4; sys_platform == \"win32\"",
+      "exceptiongroup>=1; python_version < \"3.11\"",
+      "iniconfig>=1.0.1",
+      "packaging>=22",
+      "pluggy<2,>=1.5",
+      "pygments>=2.7.2",
+      "tomli>=1; python_version < \"3.11\"",
+      "argcomplete; extra == \"dev\"",
+      "attrs>=19.2; extra == \"dev\"",
+      "hypothesis>=3.56; extra == \"dev\"",
+      "mock; extra == \"dev\"",
+      "requests; extra == \"dev\"",
+      "setuptools; extra == \"dev\"",
+      "xmlschema; extra == \"dev\""
+    ],
+    "project_urls": [
+      "Changelog, https://docs.pytest.org/en/stable/changelog.html",
+      "Contact, https://docs.pytest.org/en/stable/contact.html",
+      "Funding, https://docs.pytest.org/en/stable/sponsor.html",
+      "Homepage, https://docs.pytest.org/en/latest/",
+      "Source, https://github.com/pytest-dev/pytest",
+      "Tracker, https://github.com/pytest-dev/pytest/issues"
+    ]
+  },
+  {
+    "name": "PyYAML",
+    "version": "6.0.3",
+    "license": "MIT",
+    "license_files": [
+      "third_party_licenses/PyYAML/licenses/LICENSE"
+    ],
+    "requires_python": ">=3.8",
+    "requires": [],
+    "project_urls": [
+      "Bug Tracker, https://github.com/yaml/pyyaml/issues",
+      "CI, https://github.com/yaml/pyyaml/actions",
+      "Documentation, https://pyyaml.org/wiki/PyYAMLDocumentation",
+      "Mailing lists, http://lists.sourceforge.net/lists/listinfo/yaml-core",
+      "Source Code, https://github.com/yaml/pyyaml"
+    ]
+  },
+  {
+    "name": "regex",
+    "version": "2026.9.10",
+    "license": "Apache-2.0 AND CNRI-Python",
+    "license_files": [
+      "third_party_licenses/regex/licenses/LICENSE.txt"
+    ],
+    "requires_python": ">=3.10",
+    "requires": [],
+    "project_urls": [
+      "Homepage, https://github.com/mrabarnett/mrab-regex"
+    ]
+  },
+  {
+    "name": "requests",
+    "version": "2.34.2",
+    "license": "Apache-2.0",
+    "license_files": [
+      "third_party_licenses/requests/licenses/LICENSE",
+      "third_party_licenses/requests/licenses/NOTICE"
+    ],
+    "requires_python": ">=3.10",
+    "requires": [
+      "charset_normalizer<4,>=2",
+      "idna<4,>=2.5",
+      "urllib3<3,>=1.26",
+      "certifi>=2023.5.7",
+      "PySocks!=1.5.7,>=1.5.6; extra == \"socks\"",
+      "chardet<8,>=3.0.2; extra == \"use-chardet-on-py3\""
+    ],
+    "project_urls": [
+      "Documentation, https://requests.readthedocs.io",
+      "Source, https://github.com/psf/requests"
+    ]
+  },
+  {
+    "name": "setuptools",
+    "version": "84.0.0",
+    "license": "MIT",
+    "license_files": [
+      "third_party_licenses/setuptools/licenses/LICENSE",
+      "third_party_licenses/setuptools/LICENSE",
+      "third_party_licenses/setuptools/LICENSE",
+      "third_party_licenses/setuptools/licenses/LICENSE",
+      "third_party_licenses/setuptools/LICENSE",
+      "third_party_licenses/setuptools/licenses/LICENSE",
+      "third_party_licenses/setuptools/licenses/LICENSE",
+      "third_party_licenses/setuptools/licenses/LICENSE",
+      "third_party_licenses/setuptools/licenses/LICENSE",
+      "third_party_licenses/setuptools/licenses/LICENSE.APACHE",
+      "third_party_licenses/setuptools/licenses/LICENSE.BSD",
+      "third_party_licenses/setuptools/licenses/LICENSE",
+      "third_party_licenses/setuptools/licenses/LICENSE",
+      "third_party_licenses/setuptools/licenses/LICENSE.txt",
+      "third_party_licenses/setuptools/licenses/LICENSE"
+    ],
+    "requires_python": ">=3.10",
+    "requires": [
+      "pytest!=8.1.*,>=6; extra == \"test\"",
+      "virtualenv>=13.0.0; extra == \"test\"",
+      "wheel>=0.44.0; extra == \"test\"",
+      "pip>=19.1; extra == \"test\"",
+      "packaging>=24.2; extra == \"test\"",
+      "jaraco.envs>=2.2; extra == \"test\"",
+      "pytest-xdist>=3; extra == \"test\"",
+      "jaraco.path>=3.7.2; extra == \"test\"",
+      "build[virtualenv]>=1.0.3; extra == \"test\"",
+      "filelock>=3.4.0; extra == \"test\"",
+      "ini2toml[lite]>=0.14; extra == \"test\"",
+      "tomli-w>=1.0.0; extra == \"test\"",
+      "pytest-timeout; extra == \"test\"",
+      "pytest-perf; sys_platform != \"cygwin\" and extra == \"test\"",
+      "jaraco.develop>=7.21; (python_version >= \"3.9\" and sys_platform != \"cygwin\") and extra == \"test\"",
+      "pytest-home>=0.5; extra == \"test\"",
+      "pytest-subprocess; extra == \"test\"",
+      "pyproject-hooks!=1.1; extra == \"test\"",
+      "jaraco.test>=5.5; extra == \"test\"",
+      "sphinx>=3.5; extra == \"doc\"",
+      "jaraco.packaging>=9.3; extra == \"doc\"",
+      "rst.linker>=1.9; extra == \"doc\"",
+      "furo; extra == \"doc\"",
+      "sphinx-lint; extra == \"doc\"",
+      "jaraco.tidelift>=1.4; extra == \"doc\"",
+      "pygments-github-lexers==0.0.5; extra == \"doc\"",
+      "sphinx-favicon; extra == \"doc\"",
+      "sphinx-inline-tabs; extra == \"doc\"",
+      "sphinx-reredirects; extra == \"doc\"",
+      "sphinxcontrib-towncrier; extra == \"doc\"",
+      "sphinx-notfound-page<2,>=1; extra == \"doc\"",
+      "pyproject-hooks!=1.1; extra == \"doc\"",
+      "towncrier<24.7; extra == \"doc\"",
+      "packaging>=24.2; extra == \"core\"",
+      "more_itertools>=8.8; extra == \"core\"",
+      "jaraco.text>=3.7; extra == \"core\"",
+      "importlib_metadata>=6; python_version < \"3.10\" and extra == \"core\"",
+      "tomli>=2.0.1; python_version < \"3.11\" and extra == \"core\"",
+      "wheel>=0.43.0; extra == \"core\"",
+      "jaraco.functools>=4; extra == \"core\"",
+      "more_itertools; extra == \"core\"",
+      "pytest-checkdocs>=2.14; extra == \"check\"",
+      "pytest-ruff>=0.2.1; sys_platform != \"cygwin\" and extra == \"check\"",
+      "ruff>=0.13.0; sys_platform != \"cygwin\" and extra == \"check\"",
+      "pytest-cov; extra == \"cover\"",
+      "pytest-enabler>=3.4; extra == \"enabler\"",
+      "pytest-mypy>=1.0.1; platform_python_implementation != \"PyPy\" and extra == \"type\"",
+      "mypy==1.18.*; extra == \"type\"",
+      "importlib_metadata>=7.0.2; python_version < \"3.10\" and extra == \"type\"",
+      "jaraco.develop>=7.21; sys_platform != \"cygwin\" and extra == \"type\""
+    ],
+    "project_urls": [
+      "Source, https://github.com/pypa/setuptools",
+      "Documentation, https://setuptools.pypa.io/",
+      "Changelog, https://setuptools.pypa.io/en/stable/history.html"
+    ]
+  },
+  {
+    "name": "sortedcontainers",
+    "version": "2.4.0",
+    "license": "Apache 2.0",
+    "license_files": [
+      "third_party_licenses/sortedcontainers/LICENSE"
+    ],
+    "requires_python": null,
+    "requires": [],
+    "project_urls": null
+  },
+  {
+    "name": "tiktoken",
+    "version": "0.14.0",
+    "license": "MIT License\n\nCopyright (c) 2022 OpenAI, Shantanu Jain\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+    "license_files": [
+      "third_party_licenses/tiktoken/licenses/LICENSE"
+    ],
+    "requires_python": ">=3.9",
+    "requires": [
+      "regex",
+      "requests",
+      "blobfile>=3; extra == \"blobfile\""
+    ],
+    "project_urls": [
+      "homepage, https://github.com/openai/tiktoken",
+      "repository, https://github.com/openai/tiktoken",
+      "changelog, https://github.com/openai/tiktoken/blob/main/CHANGELOG.md"
+    ]
+  },
+  {
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "license": "PSF-2.0",
+    "license_files": [
+      "third_party_licenses/typing_extensions/licenses/LICENSE"
+    ],
+    "requires_python": ">=3.9",
+    "requires": [],
+    "project_urls": [
+      "Bug Tracker, https://github.com/python/typing_extensions/issues",
+      "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+      "Documentation, https://typing-extensions.readthedocs.io/",
+      "Home, https://github.com/python/typing_extensions",
+      "Q & A, https://github.com/python/typing/discussions",
+      "Repository, https://github.com/python/typing_extensions"
+    ]
+  },
+  {
+    "name": "tzdata",
+    "version": "2026.4",
+    "license": "Apache-2.0",
+    "license_files": [
+      "third_party_licenses/tzdata/licenses/LICENSE",
+      "third_party_licenses/tzdata/licenses/licenses/LICENSE_APACHE"
+    ],
+    "requires_python": ">=2",
+    "requires": [],
+    "project_urls": [
+      "Bug Reports, https://github.com/python/tzdata/issues",
+      "Source, https://github.com/python/tzdata",
+      "Documentation, https://tzdata.python.org"
+    ]
+  },
+  {
+    "name": "urllib3",
+    "version": "2.7.0",
+    "license": "MIT",
+    "license_files": [
+      "third_party_licenses/urllib3/licenses/LICENSE.txt"
+    ],
+    "requires_python": ">=3.10",
+    "requires": [
+      "brotli>=1.2.0; (platform_python_implementation == 'CPython') and extra == 'brotli'",
+      "brotlicffi>=1.2.0.0; (platform_python_implementation != 'CPython') and extra == 'brotli'",
+      "h2<5,>=4; extra == 'h2'",
+      "pysocks!=1.5.7,<2.0,>=1.5.6; extra == 'socks'",
+      "backports-zstd>=1.0.0; (python_version < '3.14') and extra == 'zstd'"
+    ],
+    "project_urls": [
+      "Changelog, https://github.com/urllib3/urllib3/blob/main/CHANGES.rst",
+      "Documentation, https://urllib3.readthedocs.io",
+      "Code, https://github.com/urllib3/urllib3",
+      "Issue tracker, https://github.com/urllib3/urllib3/issues"
+    ]
+  },
+  {
+    "name": "colorama",
+    "version": "0.4.6",
+    "license": "",
+    "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7",
+    "requires": null,
+    "license_files": [
+      "third_party_licenses/colorama/licenses/LICENSE.txt"
+    ],
+    "scope": "Conditional Windows pytest dependency; metadata and license verified, not executed on Windows",
+    "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"
+  }
+]

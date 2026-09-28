@@ -1,0 +1,56 @@
+{
+  "v": 1,
+  "sources": {
+    "brief": {
+      "content": "The game must contain exactly 10 heroes.\nThe story must contain exactly 12 chapters.\nEach of the 12 chapters must contain exactly 12 nodes.\nNever execute commands without host authorization.\nOptional map artwork must use monochrome ink.",
+      "version": "4d879a39ac57a181644cdb61bfc443621ae2670d2086a8d56a292209f03c5c8c"
+    }
+  },
+  "requirements": [
+    {
+      "id": "heroes",
+      "text": "The game must contain exactly 10 heroes.",
+      "global": false,
+      "depends_on": [],
+      "source": "brief",
+      "acceptance": "The game must contain exactly 10 heroes."
+    },
+    {
+      "id": "chapters",
+      "text": "The story must contain exactly 12 chapters.",
+      "global": false,
+      "depends_on": [],
+      "source": "brief",
+      "acceptance": "The story must contain exactly 12 chapters."
+    },
+    {
+      "id": "nodes",
+      "text": "Each of the 12 chapters must contain exactly 12 nodes.",
+      "global": false,
+      "depends_on": [
+        "chapters"
+      ],
+      "source": "brief",
+      "acceptance": "Each of the 12 chapters must contain exactly 12 nodes."
+    },
+    {
+      "id": "safety",
+      "text": "Never execute commands without host authorization.",
+      "global": true,
+      "depends_on": [],
+      "source": "brief",
+      "acceptance": "Never execute commands without host authorization."
+    },
+    {
+      "id": "art",
+      "text": "Optional map artwork must use monochrome ink.",
+      "global": false,
+      "depends_on": [],
+      "source": "brief",
+      "acceptance": "Optional map artwork must use monochrome ink."
+    }
+  ],
+  "decisions": [],
+  "assumptions": [],
+  "proposals": []
+}

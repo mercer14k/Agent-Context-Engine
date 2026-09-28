@@ -1,0 +1,14 @@
+include README.md LICENSE NOTICE CHANGELOG.md CONTRIBUTING.md SECURITY.md THIRD_PARTY_NOTICES.md constraints.txt
+include .gitignore .gitattributes
+recursive-include src *.py py.typed *.json *.sql *.html *.css *.js
+graft docs
+graft examples
+graft benchmarks
+graft tests
+graft skills
+graft integrations
+graft third_party_licenses
+graft .github
+graft reports
+exclude examples/request.json
+global-exclude __pycache__ *.py[cod] .DS_Store *.sqlite3* *.db* .env .env.*

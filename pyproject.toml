@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-context-engine-local"
+version = "0.1.0"
+description = "Local-first deterministic context tools with evidence-aware workflow metrics"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+readme = "README.md"
+authors = [{name = "Agent Context Engine contributors"}]
+keywords = ["ai-agents", "context-engineering", "context-compression", "token-optimization", "local-first", "mcp"]
+dependencies = []
+
+[project.optional-dependencies]
+tokens = ["tiktoken==0.14.0"]
+dashboard = ["tzdata==2026.4"]
+browser = ["playwright==1.62.0"]
+dev = ["pytest==9.1.1", "hypothesis==6.168.0", "mypy==2.3.1", "PyYAML==6.0.3"]
+
+[project.scripts]
+ace = "agent_context_engine.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+agent_context_engine = ["py.typed", "web/*", "schemas/*.json", "migrations/*.sql"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.mypy]
+python_version = "3.11"
+check_untyped_defs = true
+ignore_missing_imports = true
