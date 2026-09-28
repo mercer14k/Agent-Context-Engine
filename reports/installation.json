@@ -1,0 +1,41 @@
+{
+  "wheel": "agent_context_engine_local-0.1.0-py3-none-any.whl",
+  "dependency_free_clean_install": true,
+  "packaged_assets_verified": true,
+  "commands": [
+    {
+      "command": [
+        "diagnostics"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "offline-agent"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "seed-demo"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "report",
+        "--mode",
+        "demo",
+        "--benchmark",
+        "arithmetic-25-percent"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "python": "3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "tokenizer": "Unavailable in clean environment; fallback and mock path exercised",
+  "final_wheel_sha256": "4d366b74e19ae0e20c30e528d8a142e30dd48e1cbb75c4cb6853feb2cb7c4ca3",
+  "final_wheel_all_source_and_assets_match_tested_tree": true,
+  "verified_date": "2026-09-27",
+  "readme_in_wheel_verified": true
+}

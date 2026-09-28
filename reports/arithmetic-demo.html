@@ -1,0 +1,321 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Agent Context Engine · Evidence report</title><style>body{background:#111419;color:#e5e9ed;font:15px/1.6 system-ui;margin:5vw}h1{font-weight:550}table{border-collapse:collapse;display:block;overflow:auto}td,th{padding:10px;border:1px solid #39404b;text-align:left}pre{white-space:pre-wrap;background:#1c2129;padding:24px;border-radius:12px}.tag{color:#b9ef90}</style><h1>Agent Context Engine · Evidence report</h1><p class="tag">SYNTHETIC DEMONSTRATION — not performance evidence</p><p>Local report · No live quality or billing claim is implied by offline or synthetic evidence.</p><table><thead><tr><th>run_id</th><th>task</th><th>agent</th><th>provider</th><th>model</th><th>tokenizer</th><th>benchmark</th><th>arm</th><th>pair_id</th><th>config</th><th>engine_version</th><th>method</th><th>start</th><th>end</th><th>success</th><th>validator</th><th>expected_requests</th><th>evidence</th><th>price_version</th><th>input_tokens</th><th>output_tokens</th><th>known_partial_tokens</th><th>total_tokens</th><th>usage_complete</th><th>requests</th><th>cost</th><th>known_partial_cost</th><th>operational_cost</th><th>evaluation_cost</th><th>currency</th><th>input_cost</th><th>output_cost</th><th>duration_ms</th><th>engine_ms</th><th>retries</th><th>retrievals</th><th>bypasses</th><th>measurement_sources</th></tr></thead><tbody><tr><td>demo-arithmetic-25-percent-engine</td><td>arithmetic-25-percent</td><td>synthetic-agent</td><td>simulated</td><td>fixture-model</td><td>fixture-counts-v1</td><td>arithmetic-25-percent</td><td>engine</td><td>arithmetic-25-percent</td><td>synthetic-v1</td><td>0.1.0</td><td>json_whitespace</td><td>1789419805.856261</td><td>1789419815.856261</td><td>True</td><td>synthetic-exact-outcome-v1</td><td>2</td><td>Simulated</td><td>demo-v1</td><td>7000</td><td>2000</td><td>9000</td><td>9000</td><td>True</td><td>2</td><td>0.03</td><td>0.03</td><td>0.03</td><td>0</td><td>USD</td><td>0.014</td><td>0.016</td><td>10000.0</td><td>0.3</td><td>0</td><td>1</td><td>0</td><td>[&#x27;Simulated&#x27;]</td></tr><tr><td>demo-arithmetic-25-percent-native</td><td>arithmetic-25-percent</td><td>synthetic-agent</td><td>simulated</td><td>fixture-model</td><td>fixture-counts-v1</td><td>arithmetic-25-percent</td><td>native</td><td>arithmetic-25-percent</td><td>synthetic-v1</td><td>0.1.0</td><td>passthrough</td><td>1789419805.856261</td><td>1789419813.856261</td><td>True</td><td>synthetic-exact-outcome-v1</td><td>1</td><td>Simulated</td><td>demo-v1</td><td>10000</td><td>2000</td><td>12000</td><td>12000</td><td>True</td><td>1</td><td>0.036</td><td>0.036</td><td>0.036</td><td>0</td><td>USD</td><td>0.02</td><td>0.016</td><td>8000.0</td><td>0.3</td><td>0</td><td>0</td><td>0</td><td>[&#x27;Simulated&#x27;]</td></tr><tr><td>demo-arithmetic-25-percent-off</td><td>arithmetic-25-percent</td><td>synthetic-agent</td><td>simulated</td><td>fixture-model</td><td>fixture-counts-v1</td><td>arithmetic-25-percent</td><td>off</td><td>arithmetic-25-percent</td><td>synthetic-v1</td><td>0.1.0</td><td>passthrough</td><td>1789419805.856261</td><td>1789419813.856261</td><td>True</td><td>synthetic-exact-outcome-v1</td><td>1</td><td>Simulated</td><td>demo-v1</td><td>10000</td><td>2000</td><td>12000</td><td>12000</td><td>True</td><td>1</td><td>0.036</td><td>0.036</td><td>0.036</td><td>0</td><td>USD</td><td>0.02</td><td>0.016</td><td>8000.0</td><td>0.3</td><td>0</td><td>0</td><td>0</td><td>[&#x27;Simulated&#x27;]</td></tr></tbody></table><h2>Scope, definitions, configuration, and limitations</h2><pre>{
+  &quot;scope&quot;: {
+    &quot;workspace&quot;: &quot;default&quot;,
+    &quot;mode&quot;: &quot;demo&quot;,
+    &quot;start&quot;: null,
+    &quot;end&quot;: null,
+    &quot;filters&quot;: {
+      &quot;benchmark&quot;: &quot;arithmetic-25-percent&quot;
+    },
+    &quot;search&quot;: &quot;&quot;
+  },
+  &quot;mode_label&quot;: &quot;SYNTHETIC DEMONSTRATION — not performance evidence&quot;,
+  &quot;sample_size&quot;: 3,
+  &quot;evaluated&quot;: 3,
+  &quot;unevaluated&quot;: 0,
+  &quot;successes&quot;: 3,
+  &quot;outcome_sources&quot;: [
+    &quot;Simulated&quot;
+  ],
+  &quot;success_rate&quot;: 1.0,
+  &quot;provisional&quot;: false,
+  &quot;usage_coverage&quot;: 1.0,
+  &quot;input_tokens&quot;: 27000,
+  &quot;output_tokens&quot;: 6000,
+  &quot;usage_reason&quot;: null,
+  &quot;cost&quot;: 0.102,
+  &quot;cost_reason&quot;: null,
+  &quot;known_partial_cost&quot;: 0.102,
+  &quot;currency&quot;: &quot;USD&quot;,
+  &quot;cost_per_success&quot;: 0.033999999999999996,
+  &quot;operational_cost&quot;: 0.102,
+  &quot;evaluation_cost&quot;: 0,
+  &quot;input_cost&quot;: 0.054,
+  &quot;output_cost&quot;: 0.048,
+  &quot;duration_median_ms&quot;: 8000.0,
+  &quot;duration_p95_ms&quot;: 9800.0,
+  &quot;duration_samples&quot;: 3,
+  &quot;engine_ms&quot;: 0.8999999999999999,
+  &quot;failures&quot;: 0,
+  &quot;retries&quot;: 0,
+  &quot;retrievals&quot;: 1,
+  &quot;bypasses&quot;: 0,
+  &quot;conflicting_requests&quot;: 0,
+  &quot;last_update&quot;: 1789441405.8578188,
+  &quot;payload&quot;: [
+    {
+      &quot;tokenizer&quot;: &quot;fixture-counts-v1&quot;,
+      &quot;sample_size&quot;: 3,
+      &quot;measured&quot;: 3,
+      &quot;original&quot;: 30000,
+      &quot;optimized&quot;: 26000,
+      &quot;reduction_pct&quot;: 13.333333333333334,
+      &quot;evidence&quot;: &quot;Simulated&quot;
+    }
+  ],
+  &quot;pairs&quot;: [
+    {
+      &quot;pair_id&quot;: &quot;arithmetic-25-percent&quot;,
+      &quot;benchmark&quot;: &quot;arithmetic-25-percent&quot;,
+      &quot;stratum&quot;: [
+        &quot;arithmetic-25-percent&quot;,
+        &quot;simulated&quot;,
+        &quot;fixture-model&quot;,
+        &quot;fixture-counts-v1&quot;,
+        &quot;synthetic-v1&quot;
+      ],
+      &quot;baseline_arm&quot;: &quot;off&quot;,
+      &quot;baseline_run&quot;: &quot;demo-arithmetic-25-percent-off&quot;,
+      &quot;engine_run&quot;: &quot;demo-arithmetic-25-percent-engine&quot;,
+      &quot;baseline_tokens&quot;: 12000,
+      &quot;engine_tokens&quot;: 9000,
+      &quot;reduction_pct&quot;: 25.0,
+      &quot;evidence&quot;: &quot;Simulated&quot;,
+      &quot;measurement_sources&quot;: [
+        &quot;Simulated&quot;
+      ],
+      &quot;reason&quot;: null,
+      &quot;baseline_success&quot;: true,
+      &quot;engine_success&quot;: true,
+      &quot;baseline_cost&quot;: 0.036,
+      &quot;engine_cost&quot;: 0.03
+    },
+    {
+      &quot;pair_id&quot;: &quot;arithmetic-25-percent&quot;,
+      &quot;benchmark&quot;: &quot;arithmetic-25-percent&quot;,
+      &quot;stratum&quot;: [
+        &quot;arithmetic-25-percent&quot;,
+        &quot;simulated&quot;,
+        &quot;fixture-model&quot;,
+        &quot;fixture-counts-v1&quot;,
+        &quot;synthetic-v1&quot;
+      ],
+      &quot;baseline_arm&quot;: &quot;native&quot;,
+      &quot;baseline_run&quot;: &quot;demo-arithmetic-25-percent-native&quot;,
+      &quot;engine_run&quot;: &quot;demo-arithmetic-25-percent-engine&quot;,
+      &quot;baseline_tokens&quot;: 12000,
+      &quot;engine_tokens&quot;: 9000,
+      &quot;reduction_pct&quot;: 25.0,
+      &quot;evidence&quot;: &quot;Simulated&quot;,
+      &quot;measurement_sources&quot;: [
+        &quot;Simulated&quot;
+      ],
+      &quot;reason&quot;: null,
+      &quot;baseline_success&quot;: true,
+      &quot;engine_success&quot;: true,
+      &quot;baseline_cost&quot;: 0.036,
+      &quot;engine_cost&quot;: 0.03
+    }
+  ],
+  &quot;comparisons&quot;: [
+    {
+      &quot;stratum&quot;: [
+        &quot;arithmetic-25-percent&quot;,
+        &quot;simulated&quot;,
+        &quot;fixture-model&quot;,
+        &quot;fixture-counts-v1&quot;,
+        &quot;synthetic-v1&quot;
+      ],
+      &quot;baseline_arm&quot;: &quot;off&quot;,
+      &quot;sample_size&quot;: 1,
+      &quot;baseline_tokens&quot;: 12000,
+      &quot;engine_tokens&quot;: 9000,
+      &quot;reduction_pct&quot;: 25.0,
+      &quot;cost_improvement_pct&quot;: 16.666666666666664,
+      &quot;provisional&quot;: false,
+      &quot;evidence&quot;: &quot;Simulated&quot;,
+      &quot;measurement_sources&quot;: [
+        &quot;Simulated&quot;
+      ]
+    },
+    {
+      &quot;stratum&quot;: [
+        &quot;arithmetic-25-percent&quot;,
+        &quot;simulated&quot;,
+        &quot;fixture-model&quot;,
+        &quot;fixture-counts-v1&quot;,
+        &quot;synthetic-v1&quot;
+      ],
+      &quot;baseline_arm&quot;: &quot;native&quot;,
+      &quot;sample_size&quot;: 1,
+      &quot;baseline_tokens&quot;: 12000,
+      &quot;engine_tokens&quot;: 9000,
+      &quot;reduction_pct&quot;: 25.0,
+      &quot;cost_improvement_pct&quot;: 16.666666666666664,
+      &quot;provisional&quot;: false,
+      &quot;evidence&quot;: &quot;Simulated&quot;,
+      &quot;measurement_sources&quot;: [
+        &quot;Simulated&quot;
+      ]
+    }
+  ],
+  &quot;definitions&quot;: {
+    &quot;payload_reduction&quot;: &quot;100 × (sum original envelope tokens − sum optimized envelope tokens) / sum original envelope tokens; tokenizer strata kept separate. Not API usage.&quot;,
+    &quot;workflow_reduction&quot;: &quot;100 × (matched baseline total tokens − matched engine total tokens) / matched baseline total tokens. Every model request counted once, including retrieval and retry calls.&quot;,
+    &quot;success_rate&quot;: &quot;Verified successful tasks / evaluated tasks. Unknown outcomes excluded from denominator and disclosed.&quot;,
+    &quot;cost_per_success&quot;: &quot;All attributable cohort cost including failures and retries / verified successes. Incomplete outcomes make this provisional; incomplete prices make it unavailable.&quot;,
+    &quot;cost_improvement&quot;: &quot;100 × (baseline cost per success − engine cost per success) / baseline cost per success for matched cohorts only.&quot;,
+    &quot;duration&quot;: &quot;Task end − task start. Concurrent spans are not summed. Percentiles computed from individual durations by linear interpolation.&quot;,
+    &quot;cost&quot;: &quot;Calculated usage cost, not an invoice. Input counts include cache reads/writes as disjoint subsets; reasoning is already included in output. Price rules explicitly versioned per provider/model. Judge cost is separate.&quot;
+  },
+  &quot;prices&quot;: [
+    {
+      &quot;provider&quot;: &quot;simulated&quot;,
+      &quot;model&quot;: &quot;fixture-model&quot;,
+      &quot;version&quot;: &quot;demo-v1&quot;,
+      &quot;currency&quot;: &quot;USD&quot;,
+      &quot;source&quot;: &quot;Synthetic arithmetic rates, not market prices&quot;,
+      &quot;effective_date&quot;: &quot;2026-09-14&quot;,
+      &quot;input&quot;: 2,
+      &quot;cached_input&quot;: 0.2,
+      &quot;cache_write&quot;: 2.5,
+      &quot;output&quot;: 8,
+      &quot;discount&quot;: 0,
+      &quot;rule&quot;: &quot;inclusive-input-disjoint-cache-v1&quot;
+    }
+  ],
+  &quot;timezone&quot;: &quot;UTC&quot;,
+  &quot;generated_at&quot;: 1789442225.786792,
+  &quot;alerts&quot;: [
+    {
+      &quot;name&quot;: &quot;Task correctness&quot;,
+      &quot;value&quot;: 1.0,
+      &quot;threshold&quot;: 0.95,
+      &quot;direction&quot;: &quot;below&quot;,
+      &quot;sample_size&quot;: 3,
+      &quot;status&quot;: &quot;insufficient data&quot;,
+      &quot;evidence&quot;: &quot;SYNTHETIC DEMONSTRATION — not performance evidence&quot;,
+      &quot;scope&quot;: {
+        &quot;workspace&quot;: &quot;default&quot;,
+        &quot;mode&quot;: &quot;demo&quot;,
+        &quot;start&quot;: null,
+        &quot;end&quot;: null,
+        &quot;filters&quot;: {
+          &quot;benchmark&quot;: &quot;arithmetic-25-percent&quot;
+        },
+        &quot;search&quot;: &quot;&quot;
+      },
+      &quot;suggestion&quot;: &quot;Inspect failed outcome validators.&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Retry rate&quot;,
+      &quot;value&quot;: 0.0,
+      &quot;threshold&quot;: 0.2,
+      &quot;direction&quot;: &quot;above&quot;,
+      &quot;sample_size&quot;: 3,
+      &quot;status&quot;: &quot;insufficient data&quot;,
+      &quot;evidence&quot;: &quot;SYNTHETIC DEMONSTRATION — not performance evidence&quot;,
+      &quot;scope&quot;: {
+        &quot;workspace&quot;: &quot;default&quot;,
+        &quot;mode&quot;: &quot;demo&quot;,
+        &quot;start&quot;: null,
+        &quot;end&quot;: null,
+        &quot;filters&quot;: {
+          &quot;benchmark&quot;: &quot;arithmetic-25-percent&quot;
+        },
+        &quot;search&quot;: &quot;&quot;
+      },
+      &quot;suggestion&quot;: &quot;Inspect retry events and provider errors.&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Task latency&quot;,
+      &quot;value&quot;: 9800.0,
+      &quot;threshold&quot;: 30000,
+      &quot;direction&quot;: &quot;above&quot;,
+      &quot;sample_size&quot;: 3,
+      &quot;status&quot;: &quot;insufficient data&quot;,
+      &quot;evidence&quot;: &quot;SYNTHETIC DEMONSTRATION — not performance evidence&quot;,
+      &quot;scope&quot;: {
+        &quot;workspace&quot;: &quot;default&quot;,
+        &quot;mode&quot;: &quot;demo&quot;,
+        &quot;start&quot;: null,
+        &quot;end&quot;: null,
+        &quot;filters&quot;: {
+          &quot;benchmark&quot;: &quot;arithmetic-25-percent&quot;
+        },
+        &quot;search&quot;: &quot;&quot;
+      },
+      &quot;suggestion&quot;: &quot;Compare provider wait with engine overhead.&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Cost per success&quot;,
+      &quot;value&quot;: 0.033999999999999996,
+      &quot;threshold&quot;: 1.0,
+      &quot;direction&quot;: &quot;above&quot;,
+      &quot;sample_size&quot;: 3,
+      &quot;status&quot;: &quot;insufficient data&quot;,
+      &quot;evidence&quot;: &quot;SYNTHETIC DEMONSTRATION — not performance evidence&quot;,
+      &quot;scope&quot;: {
+        &quot;workspace&quot;: &quot;default&quot;,
+        &quot;mode&quot;: &quot;demo&quot;,
+        &quot;start&quot;: null,
+        &quot;end&quot;: null,
+        &quot;filters&quot;: {
+          &quot;benchmark&quot;: &quot;arithmetic-25-percent&quot;
+        },
+        &quot;search&quot;: &quot;&quot;
+      },
+      &quot;suggestion&quot;: &quot;Inspect matched cohorts, caches, and failed attempts.&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Retrieval failure rate&quot;,
+      &quot;value&quot;: 0.0,
+      &quot;threshold&quot;: 0.05,
+      &quot;direction&quot;: &quot;above&quot;,
+      &quot;sample_size&quot;: 1,
+      &quot;status&quot;: &quot;insufficient data&quot;,
+      &quot;evidence&quot;: &quot;SYNTHETIC DEMONSTRATION — not performance evidence&quot;,
+      &quot;scope&quot;: {
+        &quot;workspace&quot;: &quot;default&quot;,
+        &quot;mode&quot;: &quot;demo&quot;,
+        &quot;start&quot;: null,
+        &quot;end&quot;: null,
+        &quot;filters&quot;: {
+          &quot;benchmark&quot;: &quot;arithmetic-25-percent&quot;
+        },
+        &quot;search&quot;: &quot;&quot;
+      },
+      &quot;suggestion&quot;: &quot;Inspect retention and workspace authorization.&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Validation failure rate&quot;,
+      &quot;value&quot;: 0.0,
+      &quot;threshold&quot;: 0.05,
+      &quot;direction&quot;: &quot;above&quot;,
+      &quot;sample_size&quot;: 3,
+      &quot;status&quot;: &quot;insufficient data&quot;,
+      &quot;evidence&quot;: &quot;SYNTHETIC DEMONSTRATION — not performance evidence&quot;,
+      &quot;scope&quot;: {
+        &quot;workspace&quot;: &quot;default&quot;,
+        &quot;mode&quot;: &quot;demo&quot;,
+        &quot;start&quot;: null,
+        &quot;end&quot;: null,
+        &quot;filters&quot;: {
+          &quot;benchmark&quot;: &quot;arithmetic-25-percent&quot;
+        },
+        &quot;search&quot;: &quot;&quot;
+      },
+      &quot;suggestion&quot;: &quot;Inspect validator versions and stale registries.&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Measurement coverage&quot;,
+      &quot;value&quot;: 1.0,
+      &quot;threshold&quot;: 0.95,
+      &quot;direction&quot;: &quot;below&quot;,
+      &quot;sample_size&quot;: 3,
+      &quot;status&quot;: &quot;insufficient data&quot;,
+      &quot;evidence&quot;: &quot;SYNTHETIC DEMONSTRATION — not performance evidence&quot;,
+      &quot;scope&quot;: {
+        &quot;workspace&quot;: &quot;default&quot;,
+        &quot;mode&quot;: &quot;demo&quot;,
+        &quot;start&quot;: null,
+        &quot;end&quot;: null,
+        &quot;filters&quot;: {
+          &quot;benchmark&quot;: &quot;arithmetic-25-percent&quot;
+        },
+        &quot;search&quot;: &quot;&quot;
+      },
+      &quot;suggestion&quot;: &quot;Capture final usage and expected request counts.&quot;
+    }
+  ]
+}</pre></html>

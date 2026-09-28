@@ -1,0 +1,15 @@
+
+[browser]
+playwright==1.62.0
+
+[dashboard]
+tzdata==2026.4
+
+[dev]
+pytest==9.1.1
+hypothesis==6.168.0
+mypy==2.3.1
+PyYAML==6.0.3
+
+[tokens]
+tiktoken==0.14.0

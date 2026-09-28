@@ -1,0 +1,4 @@
+data_mode,workspace,run_id,task,arm,provider,model,success,input_tokens,output_tokens,cost,duration_ms,usage_complete
+SYNTHETIC DEMONSTRATION — not performance evidence,a,demo-arithmetic-25-percent-engine,arithmetic-25-percent,engine,simulated,fixture-model,True,7000,2000,0.03,10000.0,True
+SYNTHETIC DEMONSTRATION — not performance evidence,a,demo-arithmetic-25-percent-native,arithmetic-25-percent,native,simulated,fixture-model,True,10000,2000,0.036,8000.0,True
+SYNTHETIC DEMONSTRATION — not performance evidence,a,demo-arithmetic-25-percent-off,arithmetic-25-percent,off,simulated,fixture-model,True,10000,2000,0.036,8000.0,True

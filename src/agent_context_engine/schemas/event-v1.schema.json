@@ -1,0 +1,299 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ACE event v1",
+  "description": "Trusted host ingestion. Raw content/credentials forbidden. See telemetry.sanitize for field types and limits.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "workspace",
+    "mode",
+    "run_id",
+    "kind",
+    "timestamp",
+    "revision",
+    "data"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "workspace": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "real",
+        "demo"
+      ]
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "run",
+        "usage",
+        "optimization",
+        "command",
+        "retrieval",
+        "retry",
+        "check"
+      ]
+    },
+    "timestamp": {
+      "type": "number"
+    },
+    "request_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "data": {
+      "type": "object"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "run"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "agent": {},
+              "arm": {},
+              "benchmark": {},
+              "config": {},
+              "config_version": {},
+              "end": {},
+              "engine_version": {},
+              "evidence": {},
+              "expected_requests": {},
+              "failure_code": {},
+              "method": {},
+              "model": {},
+              "pair_id": {},
+              "parent_span_id": {},
+              "price_version": {},
+              "provider": {},
+              "span_id": {},
+              "start": {},
+              "success": {},
+              "task": {},
+              "task_id": {},
+              "tokenizer": {},
+              "trace_id": {},
+              "validator": {}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "usage"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "cache_write_tokens": {},
+              "cached_input_tokens": {},
+              "config_version": {},
+              "engine_version": {},
+              "evidence": {},
+              "final": {},
+              "input_tokens": {},
+              "model": {},
+              "output_tokens": {},
+              "parent_span_id": {},
+              "price_version": {},
+              "provider": {},
+              "provider_wait_ms": {},
+              "purpose": {},
+              "raw_usage": {},
+              "reasoning_tokens": {},
+              "span_id": {},
+              "task_id": {},
+              "tool_cost": {},
+              "trace_id": {}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "optimization"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "bypass_reason": {},
+              "config_version": {},
+              "duration_ms": {},
+              "engine_version": {},
+              "evidence": {},
+              "method": {},
+              "optimized_tokens": {},
+              "original_tokens": {},
+              "parent_span_id": {},
+              "span_id": {},
+              "task_id": {},
+              "tokenizer": {},
+              "trace_id": {}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "command"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "arguments": {},
+              "compact_tokens": {},
+              "config_version": {},
+              "duration_ms": {},
+              "engine_version": {},
+              "executed": {},
+              "exit_code": {},
+              "invocation": {},
+              "native_tokens": {},
+              "operation": {},
+              "parent_span_id": {},
+              "registry_version": {},
+              "request_digest": {},
+              "schema_version": {},
+              "span_id": {},
+              "task_id": {},
+              "trace_id": {},
+              "valid": {}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "retrieval"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "config_version": {},
+              "duration_ms": {},
+              "engine_version": {},
+              "parent_span_id": {},
+              "span_id": {},
+              "task_id": {},
+              "trace_id": {},
+              "valid": {}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "retry"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "config_version": {},
+              "engine_version": {},
+              "parent_span_id": {},
+              "reason_code": {},
+              "span_id": {},
+              "task_id": {},
+              "trace_id": {}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "check"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "data": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "category": {},
+              "config_version": {},
+              "engine_version": {},
+              "evidence": {},
+              "failure_code": {},
+              "parent_span_id": {},
+              "span_id": {},
+              "task_id": {},
+              "trace_id": {},
+              "valid": {},
+              "validator": {}
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ACE compact command v1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "v": {
+      "const": 1,
+      "type": "integer"
+    },
+    "registry": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{16}$"
+    },
+    "op": {
+      "const": "run_tests"
+    },
+    "suite": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stop_after": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100,
+      "default": 1
+    }
+  },
+  "required": [
+    "v",
+    "registry",
+    "op",
+    "suite"
+  ]
+}

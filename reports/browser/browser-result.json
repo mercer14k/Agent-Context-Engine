@@ -1,0 +1,32 @@
+{
+  "browser": "151.0.7922.34",
+  "page_errors": [],
+  "unexpected_console_errors": [],
+  "expected_auth_console_errors": [
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  ],
+  "resource_observation": {
+    "sample_size": 1,
+    "initial_login_and_demo_flow_seconds": 0.23279849998652935,
+    "page_cpu_task_seconds_after_load": 0.098538,
+    "page_cpu_task_seconds_full_scripted_flow": 0.27158200000000005,
+    "js_heap_bytes_after_load": 3199352,
+    "js_heap_increment_from_blank_bytes": 2667396,
+    "scope": "Chromium renderer TaskDuration and JS heap; scripted login/filter/view/export flow. Not OS process-tree CPU/RSS or passive polling benchmark."
+  },
+  "checks": [
+    "login",
+    "real_empty",
+    "demo_label",
+    "filters",
+    "arithmetic_25",
+    "input_40",
+    "drilldown",
+    "six_views",
+    "scoped_csv",
+    "settings",
+    "search_empty",
+    "mobile_overflow",
+    "keyboard_focus"
+  ]
+}

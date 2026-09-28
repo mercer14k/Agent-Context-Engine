@@ -1,0 +1,2 @@
+[console_scripts]
+ace = agent_context_engine.cli:main

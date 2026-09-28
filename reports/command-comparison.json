@@ -1,0 +1,21 @@
+{
+  "interface": "native",
+  "reason": "Schema/default overhead exceeds reduction",
+  "compact_tokens": 276,
+  "native_tokens": 217,
+  "expected_calls": 1,
+  "tokenizer": "tiktoken:0.14.0:cl100k_base",
+  "measurement_scope": "Definitions + instructions + expected generated calls; excludes provider message framing and outcome",
+  "native_call": {
+    "argv": [
+      "<workspace>/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--maxfail=1",
+      "--",
+      "<workspace>/tests/test_core.py"
+    ],
+    "cwd": "<workspace>"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "schema": "ace.local-profile.v1",
+  "environment": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "tokenizer": "tiktoken:0.14.0:cl100k_base",
+  "fixture": "synthetic inventory 40 rows",
+  "samples_per_condition": 500,
+  "instrumentation_increment_median_ms": 0.14870849554426968,
+  "uninstrumented_median_ms": 2.952416500193067,
+  "instrumented_median_ms": 3.1011249957373366,
+  "event_drops": 0,
+  "rows": [
+    {
+      "instrumented": false,
+      "repeat": 0,
+      "n": 100,
+      "median_ms": 2.9711459937971085,
+      "wall_seconds": 0.2976433750009164,
+      "cpu_seconds": 0.296671,
+      "python_peak_allocated_bytes": 109035
+    },
+    {
+      "instrumented": true,
+      "repeat": 0,
+      "n": 100,
+      "median_ms": 3.12089548970107,
+      "wall_seconds": 0.3119797919935081,
+      "cpu_seconds": 0.30921200000000004,
+      "python_peak_allocated_bytes": 108083
+    },
+    {
+      "instrumented": true,
+      "repeat": 1,
+      "n": 100,
+      "median_ms": 3.1154375028563663,
+      "wall_seconds": 0.3108957500080578,
+      "cpu_seconds": 0.308497,
+      "python_peak_allocated_bytes": 104963
+    },
+    {
+      "instrumented": false,
+      "repeat": 1,
+      "n": 100,
+      "median_ms": 2.9871454898966476,
+      "wall_seconds": 0.32510249997721985,
+      "cpu_seconds": 0.32067500000000004,
+      "python_peak_allocated_bytes": 85260
+    },
+    {
+      "instrumented": false,
+      "repeat": 2,
+      "n": 100,
+      "median_ms": 2.952416500193067,
+      "wall_seconds": 0.2950819160032552,
+      "cpu_seconds": 0.29453300000000016,
+      "python_peak_allocated_bytes": 85371
+    },
+    {
+      "instrumented": true,
+      "repeat": 2,
+      "n": 100,
+      "median_ms": 3.1011249957373366,
+      "wall_seconds": 0.30950141599169,
+      "cpu_seconds": 0.30679900000000004,
+      "python_peak_allocated_bytes": 104370
+    },
+    {
+      "instrumented": true,
+      "repeat": 3,
+      "n": 100,
+      "median_ms": 3.027874496183358,
+      "wall_seconds": 0.3032841670210473,
+      "cpu_seconds": 0.30109600000000003,
+      "python_peak_allocated_bytes": 105160
+    },
+    {
+      "instrumented": false,
+      "repeat": 3,
+      "n": 100,
+      "median_ms": 2.924854008597322,
+      "wall_seconds": 0.2930051249859389,
+      "cpu_seconds": 0.292465,
+      "python_peak_allocated_bytes": 85312
+    },
+    {
+      "instrumented": false,
+      "repeat": 4,
+      "n": 100,
+      "median_ms": 2.945896005257964,
+      "wall_seconds": 0.29393133299890906,
+      "cpu_seconds": 0.293142,
+      "python_peak_allocated_bytes": 85371
+    },
+    {
+      "instrumented": true,
+      "repeat": 4,
+      "n": 100,
+      "median_ms": 3.0246459937188774,
+      "wall_seconds": 0.3026952079962939,
+      "cpu_seconds": 0.3005110000000002,
+      "python_peak_allocated_bytes": 104390
+    }
+  ],
+  "limitations": [
+    "Microbenchmark with tracemalloc enabled; not end-to-end task latency",
+    "Python allocation peak is not process RSS",
+    "Tokenization and engine processing are included in both arms",
+    "Browser page resource counters are reported separately in reports/browser/browser-result.json"
+  ]
+}

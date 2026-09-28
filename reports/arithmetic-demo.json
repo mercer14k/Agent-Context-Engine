@@ -1,0 +1,518 @@
+{
+  "scope": {
+    "workspace": "default",
+    "mode": "demo",
+    "start": null,
+    "end": null,
+    "filters": {
+      "benchmark": "arithmetic-25-percent"
+    },
+    "search": ""
+  },
+  "mode_label": "SYNTHETIC DEMONSTRATION \u2014 not performance evidence",
+  "sample_size": 3,
+  "evaluated": 3,
+  "unevaluated": 0,
+  "successes": 3,
+  "outcome_sources": [
+    "Simulated"
+  ],
+  "success_rate": 1.0,
+  "provisional": false,
+  "usage_coverage": 1.0,
+  "input_tokens": 27000,
+  "output_tokens": 6000,
+  "usage_reason": null,
+  "cost": 0.102,
+  "cost_reason": null,
+  "known_partial_cost": 0.102,
+  "currency": "USD",
+  "cost_per_success": 0.033999999999999996,
+  "operational_cost": 0.102,
+  "evaluation_cost": 0,
+  "input_cost": 0.054,
+  "output_cost": 0.048,
+  "duration_median_ms": 8000.0,
+  "duration_p95_ms": 9800.0,
+  "duration_samples": 3,
+  "engine_ms": 0.8999999999999999,
+  "failures": 0,
+  "retries": 0,
+  "retrievals": 1,
+  "bypasses": 0,
+  "conflicting_requests": 0,
+  "last_update": 1789441405.8578188,
+  "runs": [
+    {
+      "run_id": "demo-arithmetic-25-percent-engine",
+      "task": "arithmetic-25-percent",
+      "agent": "synthetic-agent",
+      "provider": "simulated",
+      "model": "fixture-model",
+      "tokenizer": "fixture-counts-v1",
+      "benchmark": "arithmetic-25-percent",
+      "arm": "engine",
+      "pair_id": "arithmetic-25-percent",
+      "config": "synthetic-v1",
+      "engine_version": "0.1.0",
+      "method": "json_whitespace",
+      "start": 1789419805.856261,
+      "end": 1789419815.856261,
+      "success": true,
+      "validator": "synthetic-exact-outcome-v1",
+      "expected_requests": 2,
+      "evidence": "Simulated",
+      "price_version": "demo-v1",
+      "input_tokens": 7000,
+      "output_tokens": 2000,
+      "known_partial_tokens": 9000,
+      "total_tokens": 9000,
+      "usage_complete": true,
+      "requests": 2,
+      "cost": 0.03,
+      "known_partial_cost": 0.03,
+      "operational_cost": 0.03,
+      "evaluation_cost": 0,
+      "currency": "USD",
+      "input_cost": 0.014,
+      "output_cost": 0.016,
+      "duration_ms": 10000.0,
+      "engine_ms": 0.3,
+      "retries": 0,
+      "retrievals": 1,
+      "bypasses": 0,
+      "measurement_sources": [
+        "Simulated"
+      ]
+    },
+    {
+      "run_id": "demo-arithmetic-25-percent-native",
+      "task": "arithmetic-25-percent",
+      "agent": "synthetic-agent",
+      "provider": "simulated",
+      "model": "fixture-model",
+      "tokenizer": "fixture-counts-v1",
+      "benchmark": "arithmetic-25-percent",
+      "arm": "native",
+      "pair_id": "arithmetic-25-percent",
+      "config": "synthetic-v1",
+      "engine_version": "0.1.0",
+      "method": "passthrough",
+      "start": 1789419805.856261,
+      "end": 1789419813.856261,
+      "success": true,
+      "validator": "synthetic-exact-outcome-v1",
+      "expected_requests": 1,
+      "evidence": "Simulated",
+      "price_version": "demo-v1",
+      "input_tokens": 10000,
+      "output_tokens": 2000,
+      "known_partial_tokens": 12000,
+      "total_tokens": 12000,
+      "usage_complete": true,
+      "requests": 1,
+      "cost": 0.036,
+      "known_partial_cost": 0.036,
+      "operational_cost": 0.036,
+      "evaluation_cost": 0,
+      "currency": "USD",
+      "input_cost": 0.02,
+      "output_cost": 0.016,
+      "duration_ms": 8000.0,
+      "engine_ms": 0.3,
+      "retries": 0,
+      "retrievals": 0,
+      "bypasses": 0,
+      "measurement_sources": [
+        "Simulated"
+      ]
+    },
+    {
+      "run_id": "demo-arithmetic-25-percent-off",
+      "task": "arithmetic-25-percent",
+      "agent": "synthetic-agent",
+      "provider": "simulated",
+      "model": "fixture-model",
+      "tokenizer": "fixture-counts-v1",
+      "benchmark": "arithmetic-25-percent",
+      "arm": "off",
+      "pair_id": "arithmetic-25-percent",
+      "config": "synthetic-v1",
+      "engine_version": "0.1.0",
+      "method": "passthrough",
+      "start": 1789419805.856261,
+      "end": 1789419813.856261,
+      "success": true,
+      "validator": "synthetic-exact-outcome-v1",
+      "expected_requests": 1,
+      "evidence": "Simulated",
+      "price_version": "demo-v1",
+      "input_tokens": 10000,
+      "output_tokens": 2000,
+      "known_partial_tokens": 12000,
+      "total_tokens": 12000,
+      "usage_complete": true,
+      "requests": 1,
+      "cost": 0.036,
+      "known_partial_cost": 0.036,
+      "operational_cost": 0.036,
+      "evaluation_cost": 0,
+      "currency": "USD",
+      "input_cost": 0.02,
+      "output_cost": 0.016,
+      "duration_ms": 8000.0,
+      "engine_ms": 0.3,
+      "retries": 0,
+      "retrievals": 0,
+      "bypasses": 0,
+      "measurement_sources": [
+        "Simulated"
+      ]
+    }
+  ],
+  "payload": [
+    {
+      "tokenizer": "fixture-counts-v1",
+      "sample_size": 3,
+      "measured": 3,
+      "original": 30000,
+      "optimized": 26000,
+      "reduction_pct": 13.333333333333334,
+      "evidence": "Simulated"
+    }
+  ],
+  "pairs": [
+    {
+      "pair_id": "arithmetic-25-percent",
+      "benchmark": "arithmetic-25-percent",
+      "stratum": [
+        "arithmetic-25-percent",
+        "simulated",
+        "fixture-model",
+        "fixture-counts-v1",
+        "synthetic-v1"
+      ],
+      "baseline_arm": "off",
+      "baseline_run": "demo-arithmetic-25-percent-off",
+      "engine_run": "demo-arithmetic-25-percent-engine",
+      "baseline_tokens": 12000,
+      "engine_tokens": 9000,
+      "reduction_pct": 25.0,
+      "evidence": "Simulated",
+      "measurement_sources": [
+        "Simulated"
+      ],
+      "reason": null,
+      "baseline_success": true,
+      "engine_success": true,
+      "baseline_cost": 0.036,
+      "engine_cost": 0.03
+    },
+    {
+      "pair_id": "arithmetic-25-percent",
+      "benchmark": "arithmetic-25-percent",
+      "stratum": [
+        "arithmetic-25-percent",
+        "simulated",
+        "fixture-model",
+        "fixture-counts-v1",
+        "synthetic-v1"
+      ],
+      "baseline_arm": "native",
+      "baseline_run": "demo-arithmetic-25-percent-native",
+      "engine_run": "demo-arithmetic-25-percent-engine",
+      "baseline_tokens": 12000,
+      "engine_tokens": 9000,
+      "reduction_pct": 25.0,
+      "evidence": "Simulated",
+      "measurement_sources": [
+        "Simulated"
+      ],
+      "reason": null,
+      "baseline_success": true,
+      "engine_success": true,
+      "baseline_cost": 0.036,
+      "engine_cost": 0.03
+    }
+  ],
+  "comparisons": [
+    {
+      "stratum": [
+        "arithmetic-25-percent",
+        "simulated",
+        "fixture-model",
+        "fixture-counts-v1",
+        "synthetic-v1"
+      ],
+      "baseline_arm": "off",
+      "sample_size": 1,
+      "baseline_tokens": 12000,
+      "engine_tokens": 9000,
+      "reduction_pct": 25.0,
+      "cost_improvement_pct": 16.666666666666664,
+      "provisional": false,
+      "evidence": "Simulated",
+      "measurement_sources": [
+        "Simulated"
+      ]
+    },
+    {
+      "stratum": [
+        "arithmetic-25-percent",
+        "simulated",
+        "fixture-model",
+        "fixture-counts-v1",
+        "synthetic-v1"
+      ],
+      "baseline_arm": "native",
+      "sample_size": 1,
+      "baseline_tokens": 12000,
+      "engine_tokens": 9000,
+      "reduction_pct": 25.0,
+      "cost_improvement_pct": 16.666666666666664,
+      "provisional": false,
+      "evidence": "Simulated",
+      "measurement_sources": [
+        "Simulated"
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "event_id": "demo-arithmetic-25-percent-off-command",
+      "run_id": "demo-arithmetic-25-percent-off",
+      "kind": "command",
+      "timestamp": 1789441405.8567061,
+      "received": 1789441405.8567061,
+      "request_id": null,
+      "revision": 0,
+      "data": {
+        "operation": "run_tests",
+        "schema_version": "1",
+        "registry_version": "synthetic-v1",
+        "valid": true,
+        "executed": false,
+        "exit_code": null,
+        "arguments": "[redacted; use authorized local dry-run]",
+        "invocation": "[redacted; use authorized local dry-run]",
+        "compact_tokens": 50,
+        "native_tokens": 34,
+        "duration_ms": 0.1
+      }
+    },
+    {
+      "event_id": "demo-arithmetic-25-percent-native-command",
+      "run_id": "demo-arithmetic-25-percent-native",
+      "kind": "command",
+      "timestamp": 1789441405.8571808,
+      "received": 1789441405.857182,
+      "request_id": null,
+      "revision": 0,
+      "data": {
+        "operation": "run_tests",
+        "schema_version": "1",
+        "registry_version": "synthetic-v1",
+        "valid": true,
+        "executed": false,
+        "exit_code": null,
+        "arguments": "[redacted; use authorized local dry-run]",
+        "invocation": "[redacted; use authorized local dry-run]",
+        "compact_tokens": 50,
+        "native_tokens": 34,
+        "duration_ms": 0.1
+      }
+    },
+    {
+      "event_id": "demo-arithmetic-25-percent-engine-command",
+      "run_id": "demo-arithmetic-25-percent-engine",
+      "kind": "command",
+      "timestamp": 1789441405.8578188,
+      "received": 1789441405.8578188,
+      "request_id": null,
+      "revision": 0,
+      "data": {
+        "operation": "run_tests",
+        "schema_version": "1",
+        "registry_version": "synthetic-v1",
+        "valid": true,
+        "executed": false,
+        "exit_code": null,
+        "arguments": "[redacted; use authorized local dry-run]",
+        "invocation": "[redacted; use authorized local dry-run]",
+        "compact_tokens": 50,
+        "native_tokens": 34,
+        "duration_ms": 0.1
+      }
+    }
+  ],
+  "checks": [],
+  "definitions": {
+    "payload_reduction": "100 \u00d7 (sum original envelope tokens \u2212 sum optimized envelope tokens) / sum original envelope tokens; tokenizer strata kept separate. Not API usage.",
+    "workflow_reduction": "100 \u00d7 (matched baseline total tokens \u2212 matched engine total tokens) / matched baseline total tokens. Every model request counted once, including retrieval and retry calls.",
+    "success_rate": "Verified successful tasks / evaluated tasks. Unknown outcomes excluded from denominator and disclosed.",
+    "cost_per_success": "All attributable cohort cost including failures and retries / verified successes. Incomplete outcomes make this provisional; incomplete prices make it unavailable.",
+    "cost_improvement": "100 \u00d7 (baseline cost per success \u2212 engine cost per success) / baseline cost per success for matched cohorts only.",
+    "duration": "Task end \u2212 task start. Concurrent spans are not summed. Percentiles computed from individual durations by linear interpolation.",
+    "cost": "Calculated usage cost, not an invoice. Input counts include cache reads/writes as disjoint subsets; reasoning is already included in output. Price rules explicitly versioned per provider/model. Judge cost is separate."
+  },
+  "prices": [
+    {
+      "provider": "simulated",
+      "model": "fixture-model",
+      "version": "demo-v1",
+      "currency": "USD",
+      "source": "Synthetic arithmetic rates, not market prices",
+      "effective_date": "2026-09-14",
+      "input": 2,
+      "cached_input": 0.2,
+      "cache_write": 2.5,
+      "output": 8,
+      "discount": 0,
+      "rule": "inclusive-input-disjoint-cache-v1"
+    }
+  ],
+  "timezone": "UTC",
+  "generated_at": 1789442225.739212,
+  "alerts": [
+    {
+      "name": "Task correctness",
+      "value": 1.0,
+      "threshold": 0.95,
+      "direction": "below",
+      "sample_size": 3,
+      "status": "insufficient data",
+      "evidence": "SYNTHETIC DEMONSTRATION \u2014 not performance evidence",
+      "scope": {
+        "workspace": "default",
+        "mode": "demo",
+        "start": null,
+        "end": null,
+        "filters": {
+          "benchmark": "arithmetic-25-percent"
+        },
+        "search": ""
+      },
+      "suggestion": "Inspect failed outcome validators."
+    },
+    {
+      "name": "Retry rate",
+      "value": 0.0,
+      "threshold": 0.2,
+      "direction": "above",
+      "sample_size": 3,
+      "status": "insufficient data",
+      "evidence": "SYNTHETIC DEMONSTRATION \u2014 not performance evidence",
+      "scope": {
+        "workspace": "default",
+        "mode": "demo",
+        "start": null,
+        "end": null,
+        "filters": {
+          "benchmark": "arithmetic-25-percent"
+        },
+        "search": ""
+      },
+      "suggestion": "Inspect retry events and provider errors."
+    },
+    {
+      "name": "Task latency",
+      "value": 9800.0,
+      "threshold": 30000,
+      "direction": "above",
+      "sample_size": 3,
+      "status": "insufficient data",
+      "evidence": "SYNTHETIC DEMONSTRATION \u2014 not performance evidence",
+      "scope": {
+        "workspace": "default",
+        "mode": "demo",
+        "start": null,
+        "end": null,
+        "filters": {
+          "benchmark": "arithmetic-25-percent"
+        },
+        "search": ""
+      },
+      "suggestion": "Compare provider wait with engine overhead."
+    },
+    {
+      "name": "Cost per success",
+      "value": 0.033999999999999996,
+      "threshold": 1.0,
+      "direction": "above",
+      "sample_size": 3,
+      "status": "insufficient data",
+      "evidence": "SYNTHETIC DEMONSTRATION \u2014 not performance evidence",
+      "scope": {
+        "workspace": "default",
+        "mode": "demo",
+        "start": null,
+        "end": null,
+        "filters": {
+          "benchmark": "arithmetic-25-percent"
+        },
+        "search": ""
+      },
+      "suggestion": "Inspect matched cohorts, caches, and failed attempts."
+    },
+    {
+      "name": "Retrieval failure rate",
+      "value": 0.0,
+      "threshold": 0.05,
+      "direction": "above",
+      "sample_size": 1,
+      "status": "insufficient data",
+      "evidence": "SYNTHETIC DEMONSTRATION \u2014 not performance evidence",
+      "scope": {
+        "workspace": "default",
+        "mode": "demo",
+        "start": null,
+        "end": null,
+        "filters": {
+          "benchmark": "arithmetic-25-percent"
+        },
+        "search": ""
+      },
+      "suggestion": "Inspect retention and workspace authorization."
+    },
+    {
+      "name": "Validation failure rate",
+      "value": 0.0,
+      "threshold": 0.05,
+      "direction": "above",
+      "sample_size": 3,
+      "status": "insufficient data",
+      "evidence": "SYNTHETIC DEMONSTRATION \u2014 not performance evidence",
+      "scope": {
+        "workspace": "default",
+        "mode": "demo",
+        "start": null,
+        "end": null,
+        "filters": {
+          "benchmark": "arithmetic-25-percent"
+        },
+        "search": ""
+      },
+      "suggestion": "Inspect validator versions and stale registries."
+    },
+    {
+      "name": "Measurement coverage",
+      "value": 1.0,
+      "threshold": 0.95,
+      "direction": "below",
+      "sample_size": 3,
+      "status": "insufficient data",
+      "evidence": "SYNTHETIC DEMONSTRATION \u2014 not performance evidence",
+      "scope": {
+        "workspace": "default",
+        "mode": "demo",
+        "start": null,
+        "end": null,
+        "filters": {
+          "benchmark": "arithmetic-25-percent"
+        },
+        "search": ""
+      },
+      "suggestion": "Capture final usage and expected request counts."
+    }
+  ]
+}

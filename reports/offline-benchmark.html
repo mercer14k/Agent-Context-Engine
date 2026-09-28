@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Agent Context Engine · Evidence report</title><style>body{background:#111419;color:#e5e9ed;font:15px/1.6 system-ui;margin:5vw}h1{font-weight:550}table{border-collapse:collapse;display:block;overflow:auto}td,th{padding:10px;border:1px solid #39404b;text-align:left}pre{white-space:pre-wrap;background:#1c2129;padding:24px;border-radius:12px}.tag{color:#b9ef90}</style><h1>Agent Context Engine · Evidence report</h1><p class="tag">offline-replay</p><p>Local report · No live quality or billing claim is implied by offline or synthetic evidence.</p><table><thead><tr><th>fixture</th><th>arm</th><th>n</th><th>visible_tokens</th><th>fidelity_passed</th><th>median_ms</th><th>min_ms</th><th>max_ms</th></tr></thead><tbody><tr><td>coding-agent</td><td>off</td><td>5</td><td>3362</td><td>5</td><td>0.9608268737792969</td><td>0.92315673828125</td><td>1.0488033294677734</td></tr><tr><td>coding-agent</td><td>native</td><td>5</td><td>3362</td><td>5</td><td>0.9741783142089844</td><td>0.9431838989257812</td><td>1.0139942169189453</td></tr><tr><td>coding-agent</td><td>engine</td><td>5</td><td>143</td><td>5</td><td>1.0361671447753906</td><td>1.0330677032470703</td><td>1.068115234375</td></tr><tr><td>inventory-reconciliation</td><td>off</td><td>5</td><td>2314</td><td>5</td><td>0.8656978607177734</td><td>0.8449554443359375</td><td>0.8838176727294922</td></tr><tr><td>inventory-reconciliation</td><td>native</td><td>5</td><td>1663</td><td>5</td><td>0.8971691131591797</td><td>0.8559226989746094</td><td>0.9329319000244141</td></tr><tr><td>inventory-reconciliation</td><td>engine</td><td>5</td><td>1663</td><td>5</td><td>1.5339851379394531</td><td>1.4770030975341797</td><td>1.5549659729003906</td></tr><tr><td>agent-handoff</td><td>off</td><td>5</td><td>530</td><td>5</td><td>0.3457069396972656</td><td>0.2770423889160156</td><td>0.6399154663085938</td></tr><tr><td>agent-handoff</td><td>native</td><td>5</td><td>369</td><td>5</td><td>0.3228187561035156</td><td>0.30112266540527344</td><td>0.34928321838378906</td></tr><tr><td>agent-handoff</td><td>engine</td><td>5</td><td>369</td><td>5</td><td>0.4470348358154297</td><td>0.4248619079589844</td><td>0.4742145538330078</td></tr><tr><td>already-compact</td><td>off</td><td>5</td><td>19</td><td>5</td><td>0.11110305786132812</td><td>0.09989738464355469</td><td>0.1709461212158203</td></tr><tr><td>already-compact</td><td>native</td><td>5</td><td>19</td><td>5</td><td>0.12278556823730469</td><td>0.10585784912109375</td><td>0.17786026000976562</td></tr><tr><td>already-compact</td><td>engine</td><td>5</td><td>19</td><td>5</td><td>0.12803077697753906</td><td>0.110626220703125</td><td>0.18596649169921875</td></tr></tbody></table><h2>Scope, definitions, configuration, and limitations</h2><pre>{
+  &quot;schema&quot;: &quot;ace.benchmark.v1&quot;,
+  &quot;mode&quot;: &quot;offline-replay&quot;,
+  &quot;batch&quot;: &quot;b39f3441ae71&quot;,
+  &quot;engine_version&quot;: &quot;0.1.0&quot;,
+  &quot;python&quot;: &quot;3.14.7 (v3.14.7:823f0323ee6, Aug  5 2026, 07:07:01) [Clang 21.0.0 (clang-2100.1.1.101)]&quot;,
+  &quot;os&quot;: &quot;macOS-26.6.2-arm64-arm-64bit-Mach-O&quot;,
+  &quot;architecture&quot;: &quot;arm64&quot;,
+  &quot;tokenizer&quot;: &quot;tiktoken:0.14.0:cl100k_base&quot;,
+  &quot;scope&quot;: &quot;Model-visible tool-result envelope including role/trust/reference wrapper; no provider calls&quot;,
+  &quot;repeats&quot;: 5,
+  &quot;seed&quot;: 217,
+  &quot;cache_conditions&quot;: &quot;No provider cache, models, compression calls, or live task attempts. Native JSON is already minified.&quot;,
+  &quot;limitations&quot;: [
+    &quot;Offline fidelity is not live task success&quot;,
+    &quot;Model input/output savings, provider usage, and cost per successful agent task are unavailable&quot;,
+    &quot;Fixture token counts exclude full conversation; workflow fields remain unavailable&quot;,
+    &quot;No competitor configuration exercised&quot;,
+    &quot;No confidence interval for model quality: no live sample&quot;
+  ],
+  &quot;all_fidelity_passed&quot;: true
+}</pre></html>

@@ -1,0 +1,51 @@
+{
+  "v": 1,
+  "manifest_version": "a1f7fdfd1941a92acb2998a7a92e52a0fcf9a9924bf9efb4d35fa120c85e1f2b",
+  "requirements": [
+    {
+      "id": "heroes",
+      "text": "The game must contain exactly 10 heroes.",
+      "global": false,
+      "depends_on": [],
+      "source": "brief",
+      "acceptance": "The game must contain exactly 10 heroes."
+    },
+    {
+      "id": "chapters",
+      "text": "The story must contain exactly 12 chapters.",
+      "global": false,
+      "depends_on": [],
+      "source": "brief",
+      "acceptance": "The story must contain exactly 12 chapters."
+    },
+    {
+      "id": "nodes",
+      "text": "Each of the 12 chapters must contain exactly 12 nodes.",
+      "global": false,
+      "depends_on": [
+        "chapters"
+      ],
+      "source": "brief",
+      "acceptance": "Each of the 12 chapters must contain exactly 12 nodes."
+    },
+    {
+      "id": "safety",
+      "text": "Never execute commands without host authorization.",
+      "global": true,
+      "depends_on": [],
+      "source": "brief",
+      "acceptance": "Never execute commands without host authorization."
+    }
+  ],
+  "decisions": [],
+  "assumptions": [],
+  "proposals": [],
+  "source_versions": {
+    "brief": "4d879a39ac57a181644cdb61bfc443621ae2670d2086a8d56a292209f03c5c8c"
+  },
+  "task": "Validate story structure",
+  "inputs": [],
+  "output_contract": "Separate hero, chapter, node assertions",
+  "method": "explicit_scope_exact_text",
+  "warning": "Caller selects task-critical IDs; semantic completeness is not inferred"
+}
